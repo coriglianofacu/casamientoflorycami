@@ -1,0 +1,18 @@
+.frontpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 10px 30px 10px;
+  background-color: #07231a;
+  border-radius: 30px;
+  width: 370px !important;
+
+  .date {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .florycami {
+    transform: translateY(-30px);
+  }
+}

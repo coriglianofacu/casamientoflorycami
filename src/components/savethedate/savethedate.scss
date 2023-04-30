@@ -1,0 +1,14 @@
+.savethedate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 10px 30px 10px;
+  background-color: #b4d5d9;
+  border-radius: 30px;
+  width: 370px !important;
+
+  .mansion {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
