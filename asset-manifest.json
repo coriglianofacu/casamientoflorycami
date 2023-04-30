@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/casamientoflorycami/static/css/main.8ddb24e0.css",
+    "main.js": "/casamientoflorycami/static/js/main.49f569b0.js",
+    "static/media/dresscodeimage.svg": "/casamientoflorycami/static/media/dresscodeimage.af3253c8c743539228a7f007b16bb921.svg",
+    "static/media/map.svg": "/casamientoflorycami/static/media/map.57f96f04895c9cfcc581c926e7424dce.svg",
+    "static/media/gift.svg": "/casamientoflorycami/static/media/gift.7aa67638a28099b4a6efa31f8362e59a.svg",
+    "static/media/mansion.svg": "/casamientoflorycami/static/media/mansion.dbb27761777a2668099b49c4ff6f81f7.svg",
+    "static/media/confirmarasistencia.svg": "/casamientoflorycami/static/media/confirmarasistencia.77f2be40478a2764f01540817049470e.svg",
+    "static/media/mansiondellago.svg": "/casamientoflorycami/static/media/mansiondellago.209f1651bba2534df65ad630c61e3adc.svg",
+    "static/media/savethedate.svg": "/casamientoflorycami/static/media/savethedate.3f07d97f30424f6516943f1c7224a95c.svg",
+    "static/media/florycami.svg": "/casamientoflorycami/static/media/florycami.0023a16faa42e760b4ad34466552f951.svg",
+    "static/media/dresscodetext.svg": "/casamientoflorycami/static/media/dresscodetext.ed25e6af84adf2fa2c5d5c71d7c9e0c6.svg",
+    "static/media/date.svg": "/casamientoflorycami/static/media/date.4729d1aa5c01d0f02e9afb3f052f81b5.svg",
+    "index.html": "/casamientoflorycami/index.html",
+    "main.8ddb24e0.css.map": "/casamientoflorycami/static/css/main.8ddb24e0.css.map",
+    "main.49f569b0.js.map": "/casamientoflorycami/static/js/main.49f569b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ddb24e0.css",
+    "static/js/main.49f569b0.js"
+  ]
+}
