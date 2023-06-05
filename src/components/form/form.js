@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./form.scss";
 import confirmarasistencia from "../../assets/confirmarasistencia.svg";
+import emailjs from "@emailjs/browser";
 
 export const Form = () => {
+  const form = useRef();
   const [name, setName] = useState("");
+  const [quantity, setQuantity] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(`Lastname: ${name}, Phone: ${phone}, Message: ${message}`);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_sgop0bc",
+        "template_10z6h3i",
+        form.current,
+        "P5TiZzqWBYVyLSs5C"
+      )
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -19,25 +31,33 @@ export const Form = () => {
         alt="confirmar asistencia"
         src={confirmarasistencia}
       />
-      <form className="form" onSubmit={handleSubmit}>
+      <form ref={form} className="form" onSubmit={handleSubmit}>
         <label>
-          Apellido:
+          Nombre y apellido:
           <input
+            name="name"
             className="input-field"
             type="text"
-            placeholder="Familia Rodríguez"
-            value={name}
             onChange={(event) => setName(event.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Cantidad:
+          <input
+            name="quantity"
+            className="input-field"
+            type="number"
+            onChange={(event) => setQuantity(event.target.value)}
           />
         </label>
         <br />
         <label>
           Teléfono:
           <input
+            name="phone"
             className="input-field"
             type="tel"
-            placeholder="1512345678"
-            value={phone}
             onChange={(event) => setPhone(event.target.value)}
           />
         </label>
@@ -45,8 +65,8 @@ export const Form = () => {
         <label>
           ¿Algo que nos quieras decir?
           <textarea
+            name="message"
             className="input-field"
-            value={message}
             onChange={(event) => setMessage(event.target.value)}
           />
         </label>
