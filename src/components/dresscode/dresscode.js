@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./dresscode.scss";
-import text from "../../assets/dresscodetext.svg";
-import image from "../../assets/dresscodeimage.svg";
+import text from "../../assets/dresscode-text.svg";
+import image from "../../assets/dresscode-image.svg";
 
 export const DressCode = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
