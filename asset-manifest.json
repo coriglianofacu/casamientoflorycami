@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/casamientoflorycami/static/css/main.7742eb89.css",
+    "main.css": "/casamientoflorycami/static/css/main.1d74ac98.css",
     "main.js": "/casamientoflorycami/static/js/main.a4fbd584.js",
     "static/media/dresscode-image.svg": "/casamientoflorycami/static/media/dresscode-image.9648296f3c51fa5e2fe6ca305079da79.svg",
     "static/media/map.svg": "/casamientoflorycami/static/media/map.9c07d0b7d3c1dea75e00ccc3590ab65e.svg",
@@ -13,11 +13,11 @@
     "static/media/dresscode-text.svg": "/casamientoflorycami/static/media/dresscode-text.708e2990eb6c73e7285334e6f6f18c6c.svg",
     "static/media/date.svg": "/casamientoflorycami/static/media/date.4729d1aa5c01d0f02e9afb3f052f81b5.svg",
     "index.html": "/casamientoflorycami/index.html",
-    "main.7742eb89.css.map": "/casamientoflorycami/static/css/main.7742eb89.css.map",
+    "main.1d74ac98.css.map": "/casamientoflorycami/static/css/main.1d74ac98.css.map",
     "main.a4fbd584.js.map": "/casamientoflorycami/static/js/main.a4fbd584.js.map"
   },
   "entrypoints": [
-    "static/css/main.7742eb89.css",
+    "static/css/main.1d74ac98.css",
     "static/js/main.a4fbd584.js"
   ]
 }
