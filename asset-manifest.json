@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/casamientoflorycami/static/css/main.9179b965.css",
-    "main.js": "/casamientoflorycami/static/js/main.c7c00330.js",
+    "main.css": "/casamientoflorycami/static/css/main.d35a1c86.css",
+    "main.js": "/casamientoflorycami/static/js/main.571db1b5.js",
     "static/media/finaltext.svg": "/casamientoflorycami/static/media/finaltext.aa0e4734eed9cbe48b529744ae15c753.svg",
     "static/media/dresscode-image-v3.svg": "/casamientoflorycami/static/media/dresscode-image-v3.1c148454d7140b9e44dc89a3440685cb.svg",
     "static/media/mansion.svg": "/casamientoflorycami/static/media/mansion.dbb27761777a2668099b49c4ff6f81f7.svg",
     "static/media/confirmarasistencia-v3.svg": "/casamientoflorycami/static/media/confirmarasistencia-v3.45c24f5e4a83254bad7644051295ecec.svg",
     "static/media/mansiondellago-v3.svg": "/casamientoflorycami/static/media/mansiondellago-v3.b32c8e76ac4fc69f4544fec545a838ae.svg",
-    "static/media/savethedate-v3.svg": "/casamientoflorycami/static/media/savethedate-v3.13103824713d1bc83ea633a2639b59e9.svg",
+    "static/media/savethedate-v4.svg": "/casamientoflorycami/static/media/savethedate-v4.32b496ef6a6a890ac0902c6eec483d96.svg",
     "static/media/dance.svg": "/casamientoflorycami/static/media/dance.459bf4a4de322f1e2bccb84e5cffc776.svg",
     "static/media/aclaracion.svg": "/casamientoflorycami/static/media/aclaracion.26d4e9d3bd18cc1a4badb165e99f96ef.svg",
     "static/media/florycami-v3.svg": "/casamientoflorycami/static/media/florycami-v3.66ef45ea65e8f6724bda2d20d22d27b4.svg",
@@ -18,11 +18,11 @@
     "static/media/nov.svg": "/casamientoflorycami/static/media/nov.a699f90a6a8e44f68642ac76c8b1b851.svg",
     "static/media/18.svg": "/casamientoflorycami/static/media/18.5c282b00114b23a865160cde8361d0d8.svg",
     "index.html": "/casamientoflorycami/index.html",
-    "main.9179b965.css.map": "/casamientoflorycami/static/css/main.9179b965.css.map",
-    "main.c7c00330.js.map": "/casamientoflorycami/static/js/main.c7c00330.js.map"
+    "main.d35a1c86.css.map": "/casamientoflorycami/static/css/main.d35a1c86.css.map",
+    "main.571db1b5.js.map": "/casamientoflorycami/static/js/main.571db1b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9179b965.css",
-    "static/js/main.c7c00330.js"
+    "static/css/main.d35a1c86.css",
+    "static/js/main.571db1b5.js"
   ]
 }
