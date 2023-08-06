@@ -51,9 +51,11 @@
         background-color: #fff;
       }
     }
-
-    .invitado {
-      margin-top: 10px !important;
+    .invitado-container {
+      display: flex;
+      .invitado {
+        margin-top: 10px !important;
+      }
     }
 
     textarea {
@@ -73,6 +75,27 @@
         background-color: #dc7f94;
       }
 
+      &-add {
+        border: 1px solid #4aa73e;
+        background-color: transparent;
+        margin-top: 8px;
+
+        &:hover {
+          background-color: #4aa73e;
+        }
+      }
+
+      &-remove {
+        margin-left: 10px;
+        border: 1px solid #e81748;
+        background-color: transparent;
+        margin-top: 8px;
+
+        &:hover {
+          background-color: #d00c3a;
+        }
+      }
+
       &-submit {
         margin-bottom: 10px;
       }
@@ -87,27 +110,6 @@
     .btn-container {
       display: flex;
       justify-content: space-between;
-
-      .btn {
-        &-add {
-          border: 1px solid #4aa73e;
-          background-color: transparent;
-          margin-top: 8px;
-
-          &:hover {
-            background-color: #4aa73e;
-          }
-        }
-        &-remove {
-          border: 1px solid #e81748;
-          background-color: transparent;
-          margin-top: 8px;
-
-          &:hover {
-            background-color: #e81748;
-          }
-        }
-      }
     }
   }
 }

@@ -6,7 +6,6 @@ import confirmarasistencia from "../../assets/confirmarasistencia-v3.svg";
 import nombreyapellido from "../../assets/nombreyapellido-v2.svg";
 import telefono from "../../assets/telefono-v2.svg";
 import aclaracion from "../../assets/aclaracion.svg";
-import dance from "../../assets/dance.svg";
 import emailjs from "@emailjs/browser";
 
 const namespace = "contact-form";
@@ -15,35 +14,42 @@ export const Form = () => {
   const form = useRef();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [showNames, setShowNames] = useState(false);
-  const [names, setNames] = useState([""]);
-  const [quantity, setQuantity] = useState("");
+  const [inputValues, setInputValues] = useState([""]);
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
   const handleChange = (index, value) => {
-    const newNames = [...names];
-    newNames[index] = value;
-    setNames(newNames);
+    const newInputValues = [...inputValues];
+    newInputValues[index] = value;
+    setInputValues(newInputValues);
   };
 
   const handleAdd = () => {
-    setNames([...names, ""]);
+    setInputValues([...inputValues, ""]);
   };
 
   const handleRemove = (index) => {
-    const newNames = [...names];
-    newNames.splice(index, 1);
-    setNames(newNames);
+    if (inputValues.length === 1) return;
+    const newInputValues = [...inputValues];
+    newInputValues.splice(index, 1);
+    setInputValues(newInputValues);
   };
 
   const handleShowNames = () => {
     setShowNames(true);
   };
 
+  const resetForm = () => {
+    setShowNames(false);
+    setInputValues([""]);
+    setPhone("");
+    setMessage("");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!names[0] || !phone) {
+    if (!inputValues[0] || !phone) {
       toast.error("Los campos marcados con un * son obligatorios");
       return;
     }
@@ -60,6 +66,7 @@ export const Form = () => {
           autoClose: 3000,
         });
         setFormSubmitted(true);
+        resetForm();
       })
       .catch((err) => console.log(err));
   };
@@ -87,35 +94,34 @@ export const Form = () => {
           name="name"
           className="input-field"
           type="text"
-          onChange={(event) => handleChange(0, event.target.value)}
+          value={inputValues[0]}
+          onChange={(e) => handleChange(0, e.target.value)}
         />
 
         {showNames && (
           <>
-            {names.map((name, index) => (
-              <div key={index}>
+            {inputValues.slice(1).map((value, index) => (
+              <div className="invitado-container" key={index}>
                 <input
                   name="name"
                   className="invitado"
                   type="text"
-                  onChange={(e) => handleChange(index, e.target.value)}
+                  value={value}
+                  onChange={(e) => handleChange(index + 1, e.target.value)}
                 />
+                <button
+                  type="button"
+                  className="btn btn-remove"
+                  onClick={() => handleRemove(index + 1)}
+                >
+                  Eliminar
+                </button>
               </div>
             ))}
             <div className="btn-container">
               <button type="button" className="btn btn-add" onClick={handleAdd}>
                 Agregar
               </button>
-              {names.length > 0 && (
-                <button
-                  type="button"
-                  className="btn btn-remove"
-                  onClick={() => handleRemove(names.length - 1)}
-                  disabled={names.length === 0}
-                >
-                  Eliminar
-                </button>
-              )}
             </div>
           </>
         )}
@@ -131,21 +137,12 @@ export const Form = () => {
           </div>
         )}
         <br />
-        {/* <label>
-          Cantidad:
-          <input
-            name="quantity"
-            className="input-field"
-            type="number"
-            onChange={(event) => setQuantity(event.target.value)}
-          />
-        </label>
-        <br /> */}
         <img className="image label" alt="telefono" src={telefono} />
         <input
           name="phone"
           className="input-field"
           type="tel"
+          value={phone}
           onChange={(event) => setPhone(event.target.value)}
         />
         <br />
@@ -153,6 +150,7 @@ export const Form = () => {
         <textarea
           name="message"
           className="input-field"
+          value={message}
           onChange={(event) => setMessage(event.target.value)}
         />
         <br />
