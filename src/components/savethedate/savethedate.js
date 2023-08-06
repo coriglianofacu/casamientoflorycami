@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./savethedate.scss";
-import savethedate from "../../assets/savethedate.svg";
-import place from "../../assets/mansiondellago.svg";
+import savethedate from "../../assets/savethedate-v3.svg";
+import place from "../../assets/mansiondellago-v3.svg";
 import mansion from "../../assets/mansion.svg";
 
 export const SaveTheDate = () => {

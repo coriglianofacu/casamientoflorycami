@@ -3,17 +3,28 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 10px 10px 30px 10px;
-  background-color: #07231a;
+  background-color: #03283F;
   border-radius: 30px;
-  height: 660px !important;
+  // height: 660px !important;
   width: 370px !important;
 
   .date {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .month {
+      width: 30%;
+      border-top-left-radius: 30px;
+    }
+
+    .day {
+      width: 25%;
+      border-top-right-radius: 30px;
+    }
   }
 
   .florycami {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
 }
